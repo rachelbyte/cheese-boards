@@ -1,5 +1,5 @@
-const User = require('../models/')
-const db = require('./db/db')
+const User = require('../models')
+const db = require('../db/db')
 
 describe('User', () => {
 
@@ -7,7 +7,7 @@ beforeAll(async () => {
 
     await db.sequelize.sync()
 })
- 
+
 test ('A User has a name and email', async () => {
 
     const user = await User.create({ name: "test"}, {email: "test@test.com"})
