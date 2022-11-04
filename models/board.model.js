@@ -2,15 +2,15 @@ const {Model, DataTypes} = require('sequelize')
 
 const db = require ('../db/db')
 
-class Board extends Model {}
+class Board extends Model { }
 
 Board.init({
 
-    type:  DataTypes.STRING,
+    type: {type: DataTypes.STRING},
 
-    description: DataTypes.STRING,
+    description: {type: DataTypes.STRING, allowNull: false},
     
-    rating:  DataTypes.NUMBER
+    rating: {type: DataTypes.NUMBER, allowNull: false}
     
 }, {sequelize: db})
 

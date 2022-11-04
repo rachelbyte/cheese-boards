@@ -5,9 +5,9 @@ class Cheese extends Model {}
 
 Cheese.init({
 
-title:  DataTypes.STRING,
+title: {type: DataTypes.STRING} ,
 
-description:  DataTypes.STRING
+description: {type: DataTypes.STRING}
 
 }, {sequelize: db})
 
