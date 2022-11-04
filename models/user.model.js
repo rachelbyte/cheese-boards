@@ -5,19 +5,11 @@ const db = require('../db/db')
 class User extends Model { }
 
 User.init({
-name: {
 
-    type: DataTypes.STRING
-},
+name:  DataTypes.STRING,
 
-email: {
+email: DataTypes.STRING
 
-
-    type: DataTypes.STRING
-
-} 
-}, {sequelize: db}
-
-)
+}, {sequelize: db})
 
 module.exports = User

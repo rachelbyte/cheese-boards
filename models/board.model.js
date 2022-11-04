@@ -6,23 +6,12 @@ class Board extends Model {}
 
 Board.init({
 
-    type: {
+    type:  DataTypes.STRING,
 
-        type: DataTypes.STRING
-    }, 
-
-    description: {
-
-        type: DataTypes.STRING
-    },
-
-    rating: {
-
-        type: DataTypes.NUMBER
-    }
-
-
-
+    description: DataTypes.STRING,
+    
+    rating:  DataTypes.NUMBER
+    
 }, {sequelize: db})
 
 module.exports = Board
