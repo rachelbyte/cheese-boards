@@ -23,4 +23,6 @@ Board.init({
 
 
 
-})
+}, {sequelize: db})
+
+module.exports = Board
