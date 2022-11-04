@@ -1,5 +1,4 @@
-const User = require('../models/User')
-//const { describe } = require('../models/user.model')
+const User = require('../models/')
 const db = require('./db/db')
 
 describe('User', () => {
